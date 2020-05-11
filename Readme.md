@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Артём Липатов](https://up.htmlacademy.ru/htmlcss/28/user/102817).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан] (https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
