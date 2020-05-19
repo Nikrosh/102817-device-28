@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+<body>
+
+  <header>
+
+    <a href="#">
+      <img src="img/-e-logo.svg" alt="logo DEVICE" width="163px" height="35px">
+    </a>
+
+    <form action="">
+      <input type="search" name="search" placeholder="Поиск по сайту">
+      <button type="submit" name="search-button">Найти</button>
+    </form>
+
+    <nav>
+      <ul>
+        <li><a href="#">Валентин Петухов</a></li>
+        <li><a href="#">Выйти</a></li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#">каталог товаров</a>
+          <!-- Скрытое меню -->
+          <ul>
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптер</a></li>
+          </ul>
+        </li>
+        <li><a href="#">доставка</a></li>
+        <li><a href="#">гарантия</a></li>
+        <li><a href="#">контакты</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <h1>Моноподы для селфи</h1>
+
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог товаров</a></li>
+      <li>Моноподы для селфи</li>
+    </ul>
+
+    <!-- Фильтр выдачи товаров -->
+    <section>
+      <h3>фильтр:</h3>
+      <form action="">
+        <fieldset>
+          <legend>Стоимость</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <input type="checkbox" name="color-check-1" value="black" id="color-black">
+          <label for="color-black">Чёрный</label>
+          <input type="checkbox" name="color-check-2" value="white" id="color-white">
+          <label for="color-white">Белый</label>
+          <input type="checkbox" name="color-check-3" value="blue" id="color-blue">
+          <label for="color-blue">Синий</label>
+          <input type="checkbox" name="color-check-4" value="red" id="color-red">
+          <label for="color-red">Красный</label>
+          <input type="checkbox" name="color-check-5" value="pink" id="color-pink">
+          <label for="color-pink">Розовый</label>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <input type="radio" name="bluetooth" value="true" id="bluetooth-true" checked>
+          <label for="bluetooth-true">Есть</label>
+          <input type="radio" name="bluetooth" value="false" id="bluetooth-false">
+          <label for="bluetooth-false">Нет</label>
+        </fieldset>
+        <button type="submit" name="button-filter">показать</button>
+      </form>
+    </section>
+
+    <!-- Выдача товаров -->
+    <section>
+
+      <!-- Сортировка -->
+      <h3>сортировка:</h3>
+
+      <form action="">
+        <input type="radio" name="sort" id="items for price" checked>
+        <label for="items for price">По цене</label>
+        <input type="radio" name="sort" id="items for type">
+        <label for="items for type">По типу</label>
+        <input type="radio" name="sort" id="items for popular">
+        <label for="items for popular">По популярности</label>
+      </form>
+
+      <div>
+        <button type="button" name="sort-up">
+          <img src="img/icon-up-dir.svg" alt="arrow-up">
+        </button>
+        <button type="button" name="sort-down">
+          <img src="img/icon-down-dir.svg" alt="arrow-down">
+        </button>
+      </div>
+
+      <!-- Список товаров -->
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/item-1 1.jpg" alt="item-1" width="360px" height="380px">
+            <button name="in basket">в корзину</button>
+            <span>Добавить к сравнению</span>
+            <h4>Любительская селфи-палка</h4>
+            <span>500 руб.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/item-2 1.jpg" alt="item-2" width="360px" height="380px">
+            <button name="in basket">в корзину</button>
+            <span>Добавить к сравнению</span>
+            <h4>Профессиональная селфи-палка</h4>
+            <span>1 500 руб.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/item-3 1.jpg" alt="item-3" width="360px" height="380px">
+            <button name="in basket">в корзину</button>
+            <span>Добавить к сравнению</span>
+            <h4>Непотопляемая селфи-палка</h4>
+            <span>2 500 руб.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/item-4 1.jpg" alt="item-4" width="360px" height="380px">
+            <div>NEW</div>
+            <button name="in basket">в корзину</button>
+            <span>Добавить к сравнению</span>
+            <h4>Селфи-палка «Следуй за мной»</h4>
+            <span>4 900 руб.</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Пагинация -->
+      <div>
+        <a href="#">назад</a>
+
+        <form action="">
+          <input type="radio" name="1-page" value="1-page" id="1-page" checked>
+          <label for="1-page">1</label>
+          <input type="radio" name="1-page" value="2-page" id="2-page" checked>
+          <label for="2-page">2</label>
+          <input type="radio" name="3-page" value="3-page" id="3-page" checked>
+          <label for="3-page">3</label>
+        </form>
+
+        <a href="#">вперед</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Футер сайта -->
+  <footer>
+
+    <a href="#">
+      <img src="img/logo.svg" alt="DEVICE" width="163px" height="35px">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="#">Валентин Петухов</a></li>
+        <li><a href="#">Выйти</a></li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+    </nav>
+
+    <address>
+      г. Москва, ул. Строителей, 15
+    </address>
+
+    <nav>
+      <ul>
+        <li><a href="#">доставка</a></li>
+        <li><a href="#">гарантия</a></li>
+        <li><a href="#">контакты</a></li>
+      </ul>
+    </nav>
+
+    <span>Тел.: +7 (495) 495-95-95</span>
+
+    <ul>
+      <li><a href="#">Фейсбук</a></li>
+      <li><a href="#">Инстаграм</a></li>
+      <li><a href="#">Твиттер</a></li>
+    </ul>
+
+    <a href="#">HTML-academy</a>
+
+  </footer>
+
+</body>
+</html>

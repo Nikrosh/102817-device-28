@@ -14,7 +14,7 @@
       </a>
 
       <form action="">
-        <input type="text" name="search" placeholder="Поиск по сайту">
+        <input type="search" name="search" placeholder="Поиск по сайту">
         <button type="submit" name="search-button">Найти</button>
       </form>
 
@@ -281,6 +281,21 @@
       <a href="#">HTML-academy</a>
 
     </footer>
+
+    <!-- Модальное окно -->
+
+    <section>
+      <button name="close-modal"><img src="img/icon_cross.svg" alt="X"></button>
+      <form action="">
+        <label for="modal-name">Ваше имя:</label>
+        <input type="name" id="modal-name" placeholder="Имя Фамилия" required>
+        <label for="modal-name">Ваш e-mail:</label>
+        <input type="mail" id="modal-mail" placeholder="email@example.com" required>
+        <label for="modal-text">Текст письма:</label>
+        <textarea name="modal-text" id="modal-text" placeholder="В свободной форме" rows="8" cols="80"></textarea>
+        <button type="submit" name="button-modal">отправить</button>
+      </form>
+    </section>
 
   </body>
 </html>
