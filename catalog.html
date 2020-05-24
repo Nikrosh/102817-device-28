@@ -8,41 +8,41 @@
 
   <header>
 
-    <a href="#">
+    <a href="#" aria-label="DEVICE">
       <img src="img/-e-logo.svg" alt="logo DEVICE" width="163px" height="35px">
     </a>
 
     <form action="">
       <input type="search" name="search" placeholder="Поиск по сайту">
-      <button type="submit" name="search-button">Найти</button>
+      <button type="submit" name="search-button" aria-label="Найти">Найти</button>
     </form>
 
     <nav>
       <ul>
-        <li><a href="#">Валентин Петухов</a></li>
-        <li><a href="#">Выйти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li><a href="#" aria-label="Валентин Петухов">Валентин Петухов</a></li>
+        <li><a href="#" aria-label="Выйти">Выйти</a></li>
+        <li><a href="#" aria-label="Сравнить">Сравнить</a></li>
+        <li><a href="#" aria-label="Корзина">Корзина</a></li>
       </ul>
     </nav>
 
     <nav>
       <ul>
         <li>
-          <a href="#">каталог товаров</a>
+          <a href="#" aria-label="каталог товаров">каталог товаров</a>
           <!-- Скрытое меню -->
           <ul>
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптер</a></li>
+            <li><a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a></li>
+            <li><a href="#" aria-label="Моноподы для селфи">Моноподы для селфи</a></li>
+            <li><a href="#" aria-label="Экшн-камеры">Экшн-камеры</a></li>
+            <li><a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a></li>
+            <li><a href="#" aria-label="Умные часы">Умные часы</a></li>
+            <li><a href="#" aria-label="Квадрокоптер">Квадрокоптер</a></li>
           </ul>
         </li>
-        <li><a href="#">доставка</a></li>
-        <li><a href="#">гарантия</a></li>
-        <li><a href="#">контакты</a></li>
+        <li><a href="#" aria-label="доставка">доставка</a></li>
+        <li><a href="#" aria-label="гарантия">гарантия</a></li>
+        <li><a href="#" aria-label="контакты">контакты</a></li>
       </ul>
     </nav>
 
@@ -53,39 +53,57 @@
     <h1>Моноподы для селфи</h1>
 
     <ul>
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">Каталог товаров</a></li>
+      <li><a href="#" aria-label="Главная">Главная</a></li>
+      <li><a href="#" aria-label="Каталог товаров">Каталог товаров</a></li>
       <li>Моноподы для селфи</li>
     </ul>
 
     <!-- Фильтр выдачи товаров -->
     <section>
       <h3>фильтр:</h3>
-      <form action="">
+      <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Стоимость</legend>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
-          <input type="checkbox" name="color-check-1" value="black" id="color-black">
-          <label for="color-black">Чёрный</label>
-          <input type="checkbox" name="color-check-2" value="white" id="color-white">
-          <label for="color-white">Белый</label>
-          <input type="checkbox" name="color-check-3" value="blue" id="color-blue">
-          <label for="color-blue">Синий</label>
-          <input type="checkbox" name="color-check-4" value="red" id="color-red">
-          <label for="color-red">Красный</label>
-          <input type="checkbox" name="color-check-5" value="pink" id="color-pink">
-          <label for="color-pink">Розовый</label>
+          <ul>
+            <li>
+              <input type="checkbox" name="color-check-1" value="black" id="color-black">
+              <label for="color-black">Чёрный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="color-check-2" value="white" id="color-white">
+              <label for="color-white">Белый</label>
+            </li>
+            <li>
+              <input type="checkbox" name="color-check-3" value="blue" id="color-blue">
+              <label for="color-blue">Синий</label>
+            </li>
+            <li>
+              <input type="checkbox" name="color-check-4" value="red" id="color-red">
+              <label for="color-red">Красный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="color-check-5" value="pink" id="color-pink">
+              <label for="color-pink">Розовый</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Bluetooth</legend>
-          <input type="radio" name="bluetooth" value="true" id="bluetooth-true" checked>
-          <label for="bluetooth-true">Есть</label>
-          <input type="radio" name="bluetooth" value="false" id="bluetooth-false">
-          <label for="bluetooth-false">Нет</label>
+          <ul>
+            <li>
+              <input type="radio" name="bluetooth" value="true" id="bluetooth-true" checked>
+              <label for="bluetooth-true">Есть</label>
+            </li>
+            <li>
+              <input type="radio" name="bluetooth" value="false" id="bluetooth-false">
+              <label for="bluetooth-false">Нет</label>
+            </li>
+          </ul>
         </fieldset>
-        <button type="submit" name="button-filter">показать</button>
+        <button type="submit" name="button-filter" aria-label="показать">показать</button>
       </form>
     </section>
 
@@ -95,80 +113,58 @@
       <!-- Сортировка -->
       <h3>сортировка:</h3>
 
-      <form action="">
-        <input type="radio" name="sort" id="items for price" checked>
-        <label for="items for price">По цене</label>
-        <input type="radio" name="sort" id="items for type">
-        <label for="items for type">По типу</label>
-        <input type="radio" name="sort" id="items for popular">
-        <label for="items for popular">По популярности</label>
-      </form>
+      <ul>
+        <li><a href="#" aria-label="По цене">По цене</a></li>
+        <li><a href="#" aria-label="По типу">По типу</a></li>
+        <li><a href="#" aria-label="По популярности">По популярности</a></li>
+      </ul>
 
       <div>
-        <button type="button" name="sort-up">
-          <img src="img/icon-up-dir.svg" alt="arrow-up">
-        </button>
-        <button type="button" name="sort-down">
-          <img src="img/icon-down-dir.svg" alt="arrow-down">
-        </button>
+        <a href="#" aria-label="Вверх">Вверх</a>
+        <a href="#" aria-label="Вниз">Вниз</a>
       </div>
 
       <!-- Список товаров -->
       <ul>
         <li>
-          <a href="#">
-            <img src="img/item-1 1.jpg" alt="item-1" width="360px" height="380px">
-            <button name="in basket">в корзину</button>
-            <span>Добавить к сравнению</span>
-            <h4>Любительская селфи-палка</h4>
-            <span>500 руб.</span>
-          </a>
+          <img src="img/item-1 1.jpg" alt="item-1" width="360px" height="380px">
+          <button name="in basket" aria-label="в корзину">в корзину</button>
+          <span>Добавить к сравнению</span>
+          <h4><a href="#" aria-label="Любительская селфи-палка">Любительская селфи-палка</a></h4>
+          <span>500 руб.</span>
         </li>
         <li>
-          <a href="#">
-            <img src="img/item-2 1.jpg" alt="item-2" width="360px" height="380px">
-            <button name="in basket">в корзину</button>
-            <span>Добавить к сравнению</span>
-            <h4>Профессиональная селфи-палка</h4>
-            <span>1 500 руб.</span>
-          </a>
+          <img src="img/item-2 1.jpg" alt="item-2" width="360px" height="380px">
+          <button name="in basket" aria-label="в корзину">в корзину</button>
+          <span>Добавить к сравнению</span>
+          <h4><a href="#" aria-label="Профессиональная селфи-палка">Профессиональная селфи-палка</a></h4>
+          <span>1 500 руб.</span>
         </li>
         <li>
-          <a href="#">
-            <img src="img/item-3 1.jpg" alt="item-3" width="360px" height="380px">
-            <button name="in basket">в корзину</button>
-            <span>Добавить к сравнению</span>
-            <h4>Непотопляемая селфи-палка</h4>
-            <span>2 500 руб.</span>
-          </a>
+          <img src="img/item-3 1.jpg" alt="item-3" width="360px" height="380px">
+          <button name="in basket" aria-label="в корзину">в корзину</button>
+          <span>Добавить к сравнению</span>
+          <h4><a href="#" aria-label="Непотопляемая селфи-палка">Непотопляемая селфи-палка</a></h4>
+          <span>2 500 руб.</span>
         </li>
         <li>
-          <a href="#">
-            <img src="img/item-4 1.jpg" alt="item-4" width="360px" height="380px">
-            <div>NEW</div>
-            <button name="in basket">в корзину</button>
-            <span>Добавить к сравнению</span>
-            <h4>Селфи-палка «Следуй за мной»</h4>
-            <span>4 900 руб.</span>
-          </a>
+          <img src="img/item-4 1.jpg" alt="item-4" width="360px" height="380px">
+          <div>NEW</div>
+          <button name="in basket" aria-label="в корзину">в корзину</button>
+          <span>Добавить к сравнению</span>
+          <h4><a href="#" aria-label="Селфи-палка «Следуй за мной»">Селфи-палка «Следуй за мной»</a></h4>
+          <span>4 900 руб.</span>
         </li>
       </ul>
 
       <!-- Пагинация -->
-      <div>
-        <a href="#">назад</a>
-
-        <form action="">
-          <input type="radio" name="1-page" value="1-page" id="1-page" checked>
-          <label for="1-page">1</label>
-          <input type="radio" name="1-page" value="2-page" id="2-page" checked>
-          <label for="2-page">2</label>
-          <input type="radio" name="3-page" value="3-page" id="3-page" checked>
-          <label for="3-page">3</label>
-        </form>
-
-        <a href="#">вперед</a>
-      </div>
+      <ul>
+        <li><a href="#" aria-label="назад">назад</a></li>
+        <li><a href="#" aria-label="1">1</a></li>
+        <li><a href="#" aria-label="2">2</a></li>
+        <li><a href="#" aria-label="3">3</a></li>
+        <li><a href="#" aria-label="вперед">вперед</a></li>
+      </ul>
 
     </section>
 
@@ -177,40 +173,36 @@
   <!-- Футер сайта -->
   <footer>
 
-    <a href="#">
+    <a href="#" aria-label="DEVICE">
       <img src="img/logo.svg" alt="DEVICE" width="163px" height="35px">
     </a>
 
-    <nav>
-      <ul>
-        <li><a href="#">Валентин Петухов</a></li>
-        <li><a href="#">Выйти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
+    <ul>
+      <li><a href="#" aria-label="Валентин Петухов">Валентин Петухов</a></li>
+      <li><a href="#" aria-label="Выйти">Выйти</a></li>
+      <li><a href="#" aria-label="Сравнить">Сравнить</a></li>
+      <li><a href="#" aria-label="Корзина">Корзина</a></li>
+    </ul>
 
     <address>
       г. Москва, ул. Строителей, 15
     </address>
 
-    <nav>
-      <ul>
-        <li><a href="#">доставка</a></li>
-        <li><a href="#">гарантия</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
-    </nav>
+    <ul>
+      <li><a href="#" aria-label="доставка">доставка</a></li>
+      <li><a href="#" aria-label="гарантия">гарантия</a></li>
+      <li><a href="#" aria-label="контакты">контакты</a></li>
+    </ul>
 
     <span>Тел.: +7 (495) 495-95-95</span>
 
     <ul>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
-      <li><a href="#">Твиттер</a></li>
+      <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
+      <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
+      <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
     </ul>
 
-    <a href="#">HTML-academy</a>
+    <a href="#" aria-label="HTML-academy">HTML-academy</a>
 
   </footer>
 

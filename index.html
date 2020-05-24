@@ -9,20 +9,20 @@
     <!-- Шапка сайта -->
     <header>
 
-      <a href="#">
+      <a href="#" aria-label="DEVICE">
         <img src="img/-e-logo.svg" alt="logo DEVICE" width="163px" height="35px">
       </a>
 
-      <form action="">
+      <form action="https://echo.htmlacademy.ru" method="get">
         <input type="search" name="search" placeholder="Поиск по сайту">
-        <button type="submit" name="search-button">Найти</button>
+        <button type="submit" aria-label="Найти">Найти</button>
       </form>
 
       <nav>
         <ul>
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li><a href="#" aria-label="sign in">Войти</a></li>
+          <li><a href="#" aria-label="Сравнить">Сравнить</a></li>
+          <li><a href="#" aria-label="Корзина">Корзина</a></li>
         </ul>
       </nav>
 
@@ -32,17 +32,17 @@
             <a href="#">каталог товаров</a>
             <!-- Скрытое меню -->
             <ul>
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптер</a></li>
+              <li><a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a></li>
+              <li><a href="#" aria-label="Моноподы для селфи">Моноподы для селфи</a></li>
+              <li><a href="#" aria-label="Экшн-камеры">Экшн-камеры</a></li>
+              <li><a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a></li>
+              <li><a href="#" aria-label="Умные часы">Умные часы</a></li>
+              <li><a href="#" aria-label="Квадрокоптер">Квадрокоптер</a></li>
             </ul>
           </li>
-          <li><a href="#">доставка</a></li>
-          <li><a href="#">гарантия</a></li>
-          <li><a href="#">контакты</a></li>
+          <li><a href="#" aria-label="доставка">доставка</a></li>
+          <li><a href="#" aria-label="гарантия">гарантия</a></li>
+          <li><a href="#" aria-label="контакты">контакты</a></li>
         </ul>
       </nav>
 
@@ -55,11 +55,11 @@
       <!-- Слайдер -->
       <section>
 
-        <form action="">
-          <input type="radio" name="slider" checked>
-          <input type="radio" name="slider">
-          <input type="radio" name="slider">
-        </form>
+        <div>
+          <button name="slider-1" aria-label="первый слайд"></button>
+          <button name="slider-2" aria-label="второй слайд"></button>
+          <button name="slider-3" aria-label="третий слайд"></button>
+        </div>
 
         <ul>
           <li>
@@ -67,21 +67,21 @@
             <h2>Делай селфи, как Бен Стиллер!</h2>
             <p>Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="#">подробнее</a>
-            <ul>
-              <li>
-                8,5 м<br>
-                <span>Длина палки</span>
-              </li>
-              <li>
-                5 кг<br>
-                <span>Вес палки</span>
-              </li>
-              <li>
-                Карбон<br>
-                <span>Материал</span>
-              </li>
-            </ul>
+            <a href="#" aria-label="подробнее">подробнее</a>
+
+            <table>
+              <tr>
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
+              </tr>
+            </table>
+
           </li>
 
           <li>
@@ -89,13 +89,17 @@
             <h2>Худеем правильно!</h2>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.</p>
-            <a href="#">подробнее</a>
-            <ul>
-              <li>
-                48 часов<br>
-                <span>Без подзарядки</span>
-              </li>
-            </ul>
+            <a href="#" aria-label="подробнее">подробнее</a>
+
+            <table>
+              <tr>
+                <td>48 часов</td>
+              </tr>
+              <tr>
+                <th>Без подзарядки</th>
+              </tr>
+            </table>
+
           </li>
 
           <li>
@@ -103,17 +107,19 @@
             <h2>Порхает как бабочка, жалит как пчела!</h2>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
-            <a href="#">подробнее</a>
-            <ul>
-              <li>
-                800 м<br>
-                <span>Дальность полета</span>
-              </li>
-              <li>
-                50 м<br>
-                <span>Радиус поражения</span>
-              </li>
-            </ul>
+            <a href="#" aria-label="подробнее">подробнее</a>
+
+            <table>
+              <tr>
+                <td>800 м</td>
+                <td>Дальность полета</td>
+              </tr>
+              <tr>
+                <th>50 м</th>
+                <th>Радиус поражения</th>
+              </tr>
+            </table>
+
           </li>
         </ul>
 
@@ -126,48 +132,33 @@
 
         <ul>
           <li>
-            <a href="#">
-              <h3>Виртуальная реальность</h3>
-            </a>
+              <h3><a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a></h3>
           </li>
           <li>
-            <a href="#">
-              <h3>Моноподы для селфи</h3>
-            </a>
+              <h3<a href="#" aria-label="Моноподы для селфи">Моноподы для селфи</a></h3>
           </li>
           <li>
-            <a href="#">
-              <h3>Экшн-камеры</h3>
-            </a>
+              <h3><a href="#" aria-label="Экшн-камеры">Экшн-камеры</a></h3>
           </li>
           <li>
-            <a href="#">
-              <h3>Фитнес-браслеты</h3>
-            </a>
+              <h3><a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a></h3>
           </li>
           <li>
-            <a href="#">
-              <h3>Умные часы</h3>
-            </a>
+              <h3><a href="#" aria-label="Умные часы">Умные часы</a></h3>
           </li>
           <li>
-            <a href="#">
-              <h3>Квадрокоптеры</h3>
-            </a>
+              <h3><a href="#" aria-label="Квадрокоптеры">Квадрокоптеры</a></h3>
           </li>
         </ul>
       </section>
 
       <!-- Слайдер с сервисами -->
       <section>
-        <form action="">
-          <input type="radio" name="services" id="delivery" checked>
-          <label for="delivery">Доставка</label>
-          <input type="radio" name="services" id="guarantee" checked>
-          <label for="guarantee">Гарантия</label>
-          <input type="radio" name="services" id="credit" checked>
-          <label for="credit">Кредит</label>
-        </form>
+        <ul>
+          <li><button aria-label="Доставка">Доставка</button></li>
+          <li><button aria-label="Гарантия">Гарантия</button></li>
+          <li><button aria-label="Кредит">Кредит</button></li>
+        </ul>
 
         <ul>
           <li>
@@ -198,10 +189,10 @@
         <h2>Бренды</h2>
 
         <ul>
-          <li><a href="#">DJI</a></li>
-          <li><a href="#">SP Gadgets</a></li>
-          <li><a href="#">Go Pro</a></li>
-          <li><a href="#">VIVE</a></li>
+          <li><a href="#" aria-label="DJI"><img src="img/logo1 1.svg" alt="DJI"></a></li>
+          <li><a href="#" aria-label="SP Gadgets"><img src="img/logo1 2.svg" alt="SP Gadgets"></a></li>
+          <li><a href="#" aria-label="Go Pro"><img src="img/logo1 3.svg" alt="Go Pro"></a></li>
+          <li><a href="#" aria-label="VIVE"><img src="img/logo1 4.svg" alt="VIVE"></a></li>
         </ul>
 
       </section>
@@ -223,7 +214,7 @@
           <li>ЖелДорЭкспедиция</li>
         </ul>
 
-        <a href="#">подробнее о нас</a>
+        <a href="#" aria-label="подробнее о нас">подробнее о нас</a>
 
       </section>
 
@@ -235,9 +226,9 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931582563!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1589826891160!5m2!1sru!2sru" width="560px" height="222px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <a href="#" aria-label="Карта"><img src="img/map.jpg" alt="Карта"></a>
 
-        <button>напишите нам</button>
+        <a href="#" aria-label="напишите нам">напишите нам</a>
 
       </section>
 
@@ -246,55 +237,56 @@
     <!-- Футер сайта -->
     <footer>
 
-      <a href="#">
+      <a href="#" aria-label="DEVICE">
         <img src="img/logo.svg" alt="DEVICE" width="163px" height="35px">
       </a>
 
-      <nav>
-        <ul>
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </nav>
+      <ul>
+        <li><a href="#" aria-label="Войти">Войти</a></li>
+        <li><a href="#" aria-label="Сравнить">Сравнить</a></li>
+        <li><a href="#" aria-label="Корзина">Корзина</a></li>
+      </ul>
 
       <address>
         г. Москва, ул. Строителей, 15
       </address>
 
-      <nav>
-        <ul>
-          <li><a href="#">доставка</a></li>
-          <li><a href="#">гарантия</a></li>
-          <li><a href="#">контакты</a></li>
-        </ul>
-      </nav>
+      <ul>
+        <li><a href="#" aria-label="доставка">доставка</a></li>
+        <li><a href="#" aria-label="гарантия">гарантия</a></li>
+        <li><a href="#" aria-label="контакты">контакты</a></li>
+      </ul>
 
       <span>Тел.: +7 (495) 495-95-95</span>
 
       <ul>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Твиттер</a></li>
+        <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
+        <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
+        <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
       </ul>
 
-      <a href="#">HTML-academy</a>
+      <a href="#" aria-label="HTML-academy">HTML-academy</a>
 
     </footer>
 
     <!-- Модальное окно -->
 
     <section>
-      <button name="close-modal"><img src="img/icon_cross.svg" alt="X"></button>
-      <form action="">
+      <button name="close-modal" aria-label="Закрыть">Закрыть</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
         <label for="modal-name">Ваше имя:</label>
         <input type="name" id="modal-name" placeholder="Имя Фамилия" required>
         <label for="modal-name">Ваш e-mail:</label>
         <input type="mail" id="modal-mail" placeholder="email@example.com" required>
         <label for="modal-text">Текст письма:</label>
         <textarea name="modal-text" id="modal-text" placeholder="В свободной форме" rows="8" cols="80"></textarea>
-        <button type="submit" name="button-modal">отправить</button>
+        <button type="submit" name="button-modal" aria-label="отправить">отправить</button>
       </form>
+    </section>
+
+    <section>
+      <button name="close-modal" aria-label="Закрыть">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931582563!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1589826891160!5m2!1sru!2sru" width="960px" height="559px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
 
   </body>
