@@ -3,33 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <!-- Шапка сайта -->
     <header>
 
-      <a href="#" aria-label="DEVICE">
+      <a href="#" aria-label="DEVICE" class="header-logo">
         <img src="img/-e-logo.svg" alt="logo DEVICE" width="163px" height="35px">
       </a>
 
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <input type="search" name="search" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
+      <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
+        <input type="search" name="search" placeholder="Поиск по сайту" class="header-search-input">
+        <button type="submit" class="header-search-button"><span>Найти</span></button>
       </form>
 
-      <ul>
+      <ul class="header-up-menu">
         <li><a href="#">Войти</a></li>
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
 
-      <nav>
+      <nav class="header-down-menu">
         <ul>
           <li>
             <a href="#">каталог товаров</a>
             <!-- Скрытое меню -->
-            <ul>
+            <ul class="header-catalog-list">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
@@ -48,26 +50,26 @@
 
     <main>
 
-      <h1>Онлайн-магазин гаджетов DEVICE</h1>
+      <h1 class="visually-hidden">Онлайн-магазин гаджетов DEVICE</h1>
 
       <!-- Слайдер -->
-      <section>
+      <section class="head-slider">
 
-        <div>
-          <button name="slider-1" aria-label="первый слайд"></button>
+        <div class="head-slider-buttons">
+          <button name="slider-1" aria-label="первый слайд" class="button-slider-checked"></button>
           <button name="slider-2" aria-label="второй слайд"></button>
           <button name="slider-3" aria-label="третий слайд"></button>
         </div>
 
-        <ul>
-          <li>
+        <ul class="head-slider-slides">
+          <li class="head-slide-1">
             <img src="img/slider-1.png" width="384px" height="486px"  alt="Селфи-палки">
             <h2>Делай селфи, как Бен Стиллер!</h2>
             <p>Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="#">подробнее</a>
+            <a href="#" class="button">подробнее</a>
 
-            <table>
+            <table class="slide-features">
               <tr>
                 <td>8,5 м</td>
                 <td>5 кг</td>
@@ -82,14 +84,14 @@
 
           </li>
 
-          <li>
+          <li class="head-slide-2">
             <img src="img/slider-2.png" width="345px" height="485px" alt="Smart-браслет">
             <h2>Худеем правильно!</h2>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.</p>
-            <a href="#">подробнее</a>
+            <a href="#" class="button">подробнее</a>
 
-            <table>
+            <table class="slide-features">
               <tr>
                 <td>48 часов</td>
               </tr>
@@ -100,20 +102,20 @@
 
           </li>
 
-          <li>
+          <li class="head-slide-3">
             <img src="img/slider-3.png" width="526px" height="334px" alt="Дрон">
             <h2>Порхает как бабочка, жалит как пчела!</h2>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
-            <a href="#">подробнее</a>
+            <a href="#" class="button">подробнее</a>
 
-            <table>
+            <table class="slide-features">
               <tr>
                 <td>800 м</td>
-                <td>Дальность полета</td>
+                <td>50 м</td>
               </tr>
               <tr>
-                <th>50 м</th>
+                <th>Дальность полета</th>
                 <th>Радиус поражения</th>
               </tr>
             </table>
@@ -125,9 +127,9 @@
       </section>
 
       <!-- Категории товара -->
-      <section>
+      <section class="main-catalog-list">
 
-        <h2>Категории</h2>
+        <h2 class="visually-hidden">Категории</h2>
 
         <ul>
           <li>
@@ -152,28 +154,28 @@
       </section>
 
       <!-- Слайдер с сервисами -->
-      <section>
-        
-        <ul>
-          <li><button>Доставка</button></li>
-          <li><button>Гарантия</button></li>
-          <li><button>Кредит</button></li>
+      <section class="services-slider">
+
+        <ul class="services-slider-buttons">
+          <li><button class="button services-button-checked">Доставка</button></li>
+          <li><button class="button">Гарантия</button></li>
+          <li><button class="button">Кредит</button></li>
         </ul>
 
-        <ul>
-          <li>
+        <ul class="services-slider-items">
+          <li class="services-slider-item-1">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему
                 подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li>
+          <li  class="services-slider-item-2">
             <h2>Гарантия</h2>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
                 не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
           </li>
-          <li>
+          <li  class="services-slider-item-3">
             <h2>Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты
                 подберут для вас наиболее выгодные
@@ -184,11 +186,11 @@
       </section>
 
       <!-- Список логотипов брендов -->
-      <section>
+      <section class="brands-list">
 
-        <h2>Бренды</h2>
+        <h2 class="visually-hidden">Бренды</h2>
 
-        <ul>
+        <ul class="brands-list-items">
           <li><a href="#" aria-label="DJI"><img src="img/logo-1 1.svg" alt="DJI" width="260px" height="100px"></a></li>
           <li><a href="#" aria-label="SP Gadgets"><img src="img/logo-2 1.svg" alt="SP Gadgets" width="260px" height="100px"></a></li>
           <li><a href="#" aria-label="Go Pro"><img src="img/logo-3 1.svg" alt="Go Pro" width="260px" height="100px"></a></li>
@@ -198,7 +200,7 @@
       </section>
 
       <!-- Раздел О нас -->
-      <section>
+      <section class="about">
 
         <h2>О нас</h2>
 
@@ -208,18 +210,18 @@
         <p>Мы можем доставить ваш товар в самые отдаленные точки
             России! DEVICE работает со многими транспортными компаниями:</p>
 
-        <ul>
+        <ul class="delivery-company-list">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
 
-        <a href="#">подробнее о нас</a>
+        <a href="#" class="button">подробнее о нас</a>
 
       </section>
 
       <!-- Раздел контактов -->
-      <section>
+      <section class="contacts">
 
         <h2>Контакты</h2>
 
@@ -228,7 +230,7 @@
 
         <a href="#" aria-label="Карта"><img src="img/map 1.jpg" alt="Карта"  width="560px" height="222px"></a>
 
-        <a href="#">напишите нам</a>
+        <a href="#" class="button">напишите нам</a>
 
       </section>
 
@@ -237,11 +239,11 @@
     <!-- Футер сайта -->
     <footer>
 
-      <a href="#" aria-label="DEVICE">
+      <a href="#" aria-label="DEVICE" class="logo-footer">
         <img src="img/logo.svg" alt="DEVICE" width="163px" height="35px">
       </a>
 
-      <ul>
+      <ul class="footer-up-menu">
         <li><a href="#">Войти</a></li>
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
@@ -251,40 +253,46 @@
         г. Москва, ул. Строителей, 15
       </address>
 
-      <ul>
+      <ul class="footer-down-menu">
         <li><a href="#">доставка</a></li>
         <li><a href="#">гарантия</a></li>
         <li><a href="#">контакты</a></li>
       </ul>
 
-      <span>Тел.: +7 (495) 495-95-95</span>
+      <span class="phone-footer">Тел.: +7 (495) 495-95-95</span>
 
-      <ul>
+      <ul class="social-buttons">
         <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
         <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
         <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
       </ul>
 
-      <a href="#" aria-label="HTML-academy">HTML-academy</a>
+      <a href="#" aria-label="HTML-academy" class="academy-link">HTML-academy</a>
 
     </footer>
 
     <!-- Модальное окно -->
 
-    <section>
-      <button name="close-modal" aria-label="Закрыть">Закрыть</button>
+    <section class="modal-contact">
+      <button name="close-modal" aria-label="Закрыть" class="modal-button-close">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="modal-name">Ваше имя:</label>
-        <input type="name" id="modal-name" placeholder="Имя Фамилия" required>
-        <label for="modal-name">Ваш e-mail:</label>
-        <input type="mail" id="modal-mail" placeholder="email@example.com" required>
-        <label for="modal-text">Текст письма:</label>
-        <textarea name="modal-text" id="modal-text" placeholder="В свободной форме" rows="8" cols="80"></textarea>
-        <button type="submit" name="button-modal">отправить</button>
+        <p>
+          <label for="modal-name">Ваше имя:</label>
+          <input type="name" id="modal-name" placeholder="Имя Фамилия" required>
+        </p>
+        <p>
+          <label for="modal-name">Ваш e-mail:</label>
+          <input type="mail" id="modal-mail" placeholder="email@example.com" required>
+        </p>
+        <p>
+          <label for="modal-text">Текст письма:</label>
+          <textarea name="modal-text" id="modal-text" placeholder="В свободной форме" rows="8" cols="80"></textarea>
+        </p>
+        <button type="submit" name="button-modal" class="button">отправить</button>
       </form>
     </section>
 
-    <section>
+    <section class="modal-map">
       <button name="close-modal" aria-label="Закрыть">Закрыть</button>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931582563!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1589826891160!5m2!1sru!2sru" width="960px" height="559px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
