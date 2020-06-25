@@ -19,7 +19,7 @@
 
         <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
           <input type="search" name="search" placeholder="Поиск по сайту" class="header-search-input">
-          <button type="submit" class="header-search-button invisible"><span>Найти</span></button>
+          <button type="submit" class="header-search-button"><span>Найти</span></button>
         </form>
 
         <ul class="header-up-menu menu-logout">
@@ -187,13 +187,13 @@
                   подъезду совершенно бесплатно! Ведь мы неплохо<br>
                   заработаем, поднимая его на ваш этаж.</p>
             </li>
-            <li  class="service-guarantee invisible">
+            <li  class="service-guarantee">
               <h2 class="title-1">Гарантия</h2>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
                   не переживайте, мы выдадим вам новый.<br>
                   Товар, не дом, конечно же.</p>
             </li>
-            <li  class="service-credit invisible">
+            <li  class="service-credit">
               <h2 class="title-1">Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты<br>
                   подберут для вас наиболее выгодные<br>
@@ -301,30 +301,30 @@
     </footer>
 
     <!-- Модальное окно -->
+    <div class="modal-container">
+      <section class="modal-contact modal">
+        <button name="close-modal" aria-label="Закрыть" class="modal-button-close"></button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-name-container">
+            <label for="modal-name">Ваше имя:</label>
+            <input type="name" id="modal-name" placeholder="Имя Фамилия" required>
+          </p>
+          <p class="modal-mail-container">
+            <label for="modal-mail">Ваш e-mail:</label>
+            <input type="mail" id="modal-mail" placeholder="email@example.com" required>
+          </p>
+          <p class="modal-text-container">
+            <label for="modal-text">Текст письма:</label>
+            <textarea name="modal-text" id="modal-text" placeholder="В свободной форме" rows="8" cols="80"></textarea>
+          </p>
+          <button type="submit" name="button-modal" class="button modal-submit">отправить</button>
+        </form>
+      </section>
 
-    <section class="modal-contact invisible">
-      <button name="close-modal" aria-label="Закрыть" class="modal-button-close">Закрыть</button>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="modal-name">Ваше имя:</label>
-          <input type="name" id="modal-name" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
-          <label for="modal-name">Ваш e-mail:</label>
-          <input type="mail" id="modal-mail" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label for="modal-text">Текст письма:</label>
-          <textarea name="modal-text" id="modal-text" placeholder="В свободной форме" rows="8" cols="80"></textarea>
-        </p>
-        <button type="submit" name="button-modal" class="button">отправить</button>
-      </form>
-    </section>
-
-    <section class="modal-map invisible">
-      <button name="close-modal" aria-label="Закрыть">Закрыть</button>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931582563!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1589826891160!5m2!1sru!2sru" width="960px" height="559px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </section>
-
+      <section class="modal-map modal">
+        <button name="close-modal" aria-label="Закрыть" class="modal-button-close"></button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931582563!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1589826891160!5m2!1sru!2sru" width="960px" height="559px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </section>
+    </div>
   </body>
 </html>
