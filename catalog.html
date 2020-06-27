@@ -8,9 +8,9 @@
 </head>
 <body class="page-body">
 
-  <header class="container">
+  <header class="header-catalog container">
 
-    <a href="#" aria-label="DEVICE" class="header-logo">
+    <a href="index.html" aria-label="DEVICE" class="header-logo">
       <img src="img/-e-logo.svg" alt="logo DEVICE" width="163px" height="35px">
     </a>
 
@@ -33,28 +33,28 @@
     <nav class="header-down-menu">
       <div>
        <a href="#" class="header-catalog-link">каталог товаров</a>
+
+       <!-- Скрытое меню -->
+       <div class="header-catalog-list">
+         <ul>
+           <li><a href="#">Виртуальная реальность</a></li>
+           <li><a href="catalog.html">Моноподы для селфи</a></li>
+           <li><a href="#">Экшн-камеры</a></li>
+         </ul>
+         <ul>
+           <li><a href="#">Фитнес-браслеты</a></li>
+           <li><a href="#">Умные часы</a></li>
+         </ul>
+         <ul>
+           <li><a href="#">Квадрокоптер</a></li>
+         </ul>
+       </div>
       </div>
       <ul class="header-down-menu-right-list">
         <li><a href="#">доставка</a></li>
         <li><a href="#">гарантия</a></li>
         <li><a href="#">контакты</a></li>
       </ul>
-          <!-- Скрытое меню -->
-      <div class="header-catalog-list">
-        <ul>
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Фитнес-браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Квадрокоптер</a></li>
-        </ul>
-      </div>
-    </nav>
 
   </header>
 
@@ -80,8 +80,8 @@
         <section class="catalog-filter">
           <h3 class="title-2">фильтр:</h3>
           <form action="https://echo.htmlacademy.ru" method="get" class="form-filter">
-            <fieldset>
-              <legend>Стоимость</legend>
+            <fieldset class="filter-section">
+              <legend class="filter-legend">Стоимость</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -100,8 +100,8 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset>
-              <legend>Цвет</legend>
+            <fieldset class="filter-section">
+              <legend class="filter-legend">Цвет</legend>
               <ul class="filter-colors">
                 <li>
                   <input type="checkbox" name="color-check-1" value="black" id="color-black" class="visually-hidden filter-input-checkbox">
@@ -125,8 +125,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
-              <legend>Bluetooth</legend>
+            <fieldset class="filter-section">
+              <legend class="filter-legend">Bluetooth</legend>
               <ul class="filter-bluetooth">
                 <li>
                   <input type="radio" name="bluetooth" value="true" id="bluetooth-true"  class="visually-hidden filter-input-radio" checked>
@@ -232,40 +232,52 @@
   </main>
 
   <!-- Футер сайта -->
-  <footer>
+  <footer class="main-footer">
 
     <div class="footer-grid container">
 
-      <a href="#" aria-label="DEVICE" class="logo-footer">
-        <img src="img/logo.svg" alt="DEVICE" width="163px" height="35px">
-      </a>
+      <div class="footer-top-row">
 
-      <ul class="footer-up-menu menu-login">
-        <li><a href="#" class="footer-login">Валентин Петухов</a></li>
-        <li><a href="#" class="sign-out">Выйти</a></li>
-        <li><a href="#" class="footer-comparison">Сравнить</a></li>
-        <li><a href="#" class="footer-basket">Корзина</a></li>
-      </ul>
+        <a href="index.html" aria-label="DEVICE" class="logo-footer">
+          <img src="img/logo.svg" alt="DEVICE" width="163px" height="35px">
+        </a>
 
-      <address class="footer-address">
-        г. Москва, ул. Строителей, 15
-      </address>
+        <ul class="footer-up-menu menu-login">
+          <li><a href="#" class="footer-login">Валентин Петухов</a></li>
+          <li><a href="#" class="sign-out">Выйти</a></li>
+          <li><a href="#" class="footer-comparison">Сравнить</a></li>
+          <li><a href="#" class="footer-basket">Корзина</a></li>
+        </ul>
 
-      <ul class="footer-down-menu">
-        <li><a href="#">доставка</a></li>
-        <li><a href="#">гарантия</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
+      </div>
 
-      <span class="phone-footer">Тел.: +7 (495) 495-95-95</span>
+      <div class="footer-middle-row">
 
-      <ul class="social-buttons">
-        <li><a href="#" aria-label="Фейсбук" class="social-fb"></a></li>
-        <li><a href="#" aria-label="Инстаграм" class="social-inst"></a></li>
-        <li><a href="#" aria-label="Твиттер" class="social-twit"></a></li>
-      </ul>
+        <address class="footer-address">
+          г. Москва, ул. Строителей, 15
+        </address>
 
-      <a href="#" aria-label="HTML-academy" class="academy-link"></a>
+        <ul class="footer-down-menu">
+          <li><a href="#">доставка</a></li>
+          <li><a href="#">гарантия</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>
+
+        <span class="phone-footer">Тел.: +7 (495) 495-95-95</span>
+
+      </div>
+
+      <div class="footer-bottom-row">
+
+        <ul class="social-buttons">
+          <li><a href="#" aria-label="Фейсбук" class="social-fb"></a></li>
+          <li><a href="#" aria-label="Инстаграм" class="social-inst"></a></li>
+          <li><a href="#" aria-label="Твиттер" class="social-twit"></a></li>
+        </ul>
+
+        <a href="#" aria-label="HTML-academy" class="academy-link"></a>
+
+      </div>
 
     </div>
 
