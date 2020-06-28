@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
+  <body class="page-body body-index">
 
     <!-- Шапка сайта -->
     <header class="header-home container">
@@ -18,7 +18,7 @@
       <div class="header-up-container">
 
         <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
-          <input type="search" name="search" placeholder="Поиск по сайту" class="header-search-input">
+          <input type="text" name="search" placeholder="Поиск по сайту" class="header-search-input" autocomplete="off">
           <button type="submit" class="header-search-button"><span>Найти</span></button>
         </form>
 
@@ -67,13 +67,13 @@
       <section class="head-slider container">
 
         <div class="head-slider-buttons">
-          <button name="slider-1" aria-label="первый слайд" class="button-slider-checked"></button>
-          <button name="slider-2" aria-label="второй слайд"></button>
-          <button name="slider-3" aria-label="третий слайд"></button>
+          <button name="slider-1" aria-label="первый слайд" class="button-head-slider button-slider-checked"></button>
+          <button name="slider-2" aria-label="второй слайд" class="button-head-slider"></button>
+          <button name="slider-3" aria-label="третий слайд" class="button-head-slider"></button>
         </div>
 
         <ul class="head-slider-slides">
-          <li class="head-slide-1">
+          <li class="head-slide flex-show">
             <img src="img/slider-1.png" width="384px" height="486px"  alt="Селфи-палки">
 
             <div class="head-slide-text">
@@ -98,7 +98,7 @@
 
           </li>
 
-          <li class="head-slide-2">
+          <li class="head-slide head-slide-2">
             <img src="img/slider-2.png" width="345px" height="485px" alt="Smart-браслет">
 
             <div class="head-slide-text">
@@ -118,7 +118,7 @@
             </div>
           </li>
 
-          <li class="head-slide-3">
+          <li class="head-slide head-slide-3">
             <img src="img/slider-3.png" width="526px" height="334px" alt="Дрон">
 
             <div class="head-slide-text">
@@ -177,13 +177,13 @@
         <div class="services-container container">
 
           <ul class="services-slider-buttons">
-            <li><button class="button services-button-checked">Доставка</button></li>
-            <li><button class="button">Гарантия</button></li>
-            <li><button class="button">Кредит</button></li>
+            <li><button class="button services-button-checked button-delivery">Доставка</button></li>
+            <li><button class="button button-guarantee">Гарантия</button></li>
+            <li><button class="button button-credit">Кредит</button></li>
           </ul>
 
           <ul class="services-slider-items">
-            <li class="service-delivery">
+            <li class="service-delivery block-show">
               <h2 class="title-1">Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему<br>
                   подъезду совершенно бесплатно! Ведь мы неплохо<br>
@@ -254,7 +254,7 @@
 
         <a href="#" aria-label="Карта" class="contact-map"><img src="img/map 1.jpg" alt="Карта"  width="560px" height="222px"></a>
 
-        <a href="#" class="button">напишите нам</a>
+        <a href="#" class="button button-contact">напишите нам</a>
 
       </section>
 
@@ -316,7 +316,7 @@
     <!-- Модальное окно -->
     <div class="modal-container">
       <section class="modal-contact modal">
-        <button name="close-modal" aria-label="Закрыть" class="modal-button-close"></button>
+        <button name="close-modal" aria-label="Закрыть" class="modal-button-close modal-contact-close"></button>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p class="modal-name-container">
             <label for="modal-name">Ваше имя:</label>
@@ -335,9 +335,12 @@
       </section>
 
       <section class="modal-map modal">
-        <button name="close-modal" aria-label="Закрыть" class="modal-button-close"></button>
+        <button name="close-modal" aria-label="Закрыть" class="modal-button-close modal-map-close"></button>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931582563!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1589826891160!5m2!1sru!2sru" width="960px" height="559px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
   </body>
 </html>
