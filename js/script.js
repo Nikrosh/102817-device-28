@@ -6,7 +6,7 @@ var modMapButton = document.querySelector('.contact-map');
 var modContactClose = document.querySelector('.modal-contact-close');
 var modMapClose = document.querySelector('.modal-map-close');
 var body = document.querySelector('body');
-var catMenuOpen = document.querySelector('.header-catalog-link');
+var catMenuOpen = document.querySelector('.header-catalog-container');
 var catMenu = document.querySelector('.header-catalog-list');
 var inputSearch = document.querySelector('.header-search-input');
 var inputSearchButton = document.querySelector('.header-search-button');
@@ -117,13 +117,14 @@ sliderButtons[2].addEventListener("click", function (evt) {
 
 // Catalog menu
 
-catMenuOpen.addEventListener("click", function (evt) {
+catMenuOpen.addEventListener("mouseover", function (evt) {
   evt.preventDefault();
-  if (catMenu.classList.contains("flex-show")) {
-    catMenu.classList.remove("flex-show");
-  } else {
-    catMenu.classList.add("flex-show");
-    }
+  catMenu.classList.add("flex-show");
+});
+
+catMenuOpen.addEventListener("mouseout", function (evt) {
+  evt.preventDefault();
+  catMenu.classList.remove("flex-show");
 });
 
 // search
