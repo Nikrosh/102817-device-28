@@ -227,6 +227,10 @@ body {
   border-color: var(--black);
 }
 
+.header-search-input:focus+.header-search-button {
+  display: inline-block;
+}
+
 .header-search-button:hover {
   color: var(--white);
   background-color: var(--black);
@@ -421,6 +425,10 @@ body {
   width: 1160px;
   padding-left: 60px;
   padding-bottom: 38px;
+}
+
+.header-catalog-container:hover .header-catalog-list {
+  display: flex;
 }
 
 .header-catalog-list ul {

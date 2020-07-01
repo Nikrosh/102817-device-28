@@ -6,10 +6,6 @@ var modMapButton = document.querySelector('.contact-map');
 var modContactClose = document.querySelector('.modal-contact-close');
 var modMapClose = document.querySelector('.modal-map-close');
 var body = document.querySelector('body');
-var catMenuOpen = document.querySelector('.header-catalog-container');
-var catMenu = document.querySelector('.header-catalog-list');
-var inputSearch = document.querySelector('.header-search-input');
-var inputSearchButton = document.querySelector('.header-search-button');
 var deliveryButton = document.querySelector('.button-delivery');
 var guaranteeButton = document.querySelector('.button-guarantee');
 var creditButton = document.querySelector('.button-credit');
@@ -114,25 +110,3 @@ sliderButtons[2].addEventListener("click", function (evt) {
 });
 
 };
-
-// Catalog menu
-
-catMenuOpen.addEventListener("mouseover", function (evt) {
-  evt.preventDefault();
-  catMenu.classList.add("flex-show");
-});
-
-catMenuOpen.addEventListener("mouseout", function (evt) {
-  evt.preventDefault();
-  catMenu.classList.remove("flex-show");
-});
-
-// search
-
-inputSearch.addEventListener("focus", function () {
-  inputSearchButton.classList.add("inline-block-show");
-});
-
-inputSearch.addEventListener("blur", function () {
-  inputSearchButton.classList.remove("inline-block-show");
-});
