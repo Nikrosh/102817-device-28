@@ -94,7 +94,6 @@ body {
 }
 
 .page-body {
-  padding-top: 40px;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -153,6 +152,7 @@ body {
 /* header */
 
 .header-catalog {
+  margin-top: 40px;
   background-color: var(--yellow);
   padding-left: 60px;
   padding-right: 60px;
@@ -160,6 +160,7 @@ body {
 }
 
 .header-home {
+  margin-top: 40px;
   height: 300px;
   background-color: var(--yellow);
   padding-left: 60px;
