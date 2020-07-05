@@ -2035,6 +2035,12 @@ footer .container::before {
     background-color: #f2f2f2;
 }
 
+.modal-contact input:invalid {
+    border: none;
+    color: rgba(0, 0, 0, 0.4);
+    background-color:  #F6DADA;
+}
+
 .modal-contact textarea {
     width: 760px;
     height: 167px;
@@ -2079,14 +2085,40 @@ footer .container::before {
     display: none;
 }
 
+@keyframes opacity {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
+
 .flex-show {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
+.slide-flex-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  animation-name: opacity;
+  animation-duration: 0.6s;
+}
+
 .block-show {
     display: block;
+    animation-name: opacity;
+    animation-duration: 0.6s;
 }
 
 .inline-block-show {

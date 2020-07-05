@@ -14,8 +14,21 @@ var guaranteeSection = document.querySelector('.service-guarantee');
 var creditSection = document.querySelector('.service-credit');
 var sliderButtons = document.querySelectorAll('.button-head-slider');
 var headSlides = document.querySelectorAll('.head-slide');
+var inputName = document.querySelector('#modal-name');
+var inputMail = document.querySelector('#modal-mail');
+var modalForm = document.querySelector('.modal-contact-form');
+var storageName = localStorage.getItem('Name');
+
+var isStorageSupport = true;
+var storage = "";
 
 if (body.classList.contains('body-index')) {
+
+try {
+storageName = localStorage.getItem("Name");
+} catch (err) {
+isStorageSupport = false;
+}
 
 // Modal-contact
 
@@ -23,12 +36,44 @@ modContactButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   modContainer.classList.add('flex-show');
   modContact.classList.add('block-show');
+
+  if (storageName) {
+      inputName.value = storageName;
+      inputMail.foceus();
+  } else {
+      inputName.focus();
+  }
+
 });
 
 modContactClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   modContainer.classList.remove('flex-show');
   modContact.classList.remove('block-show');
+  modContact.classList.remove('modal-error');
+});
+
+modalForm.addEventListener('submit', function (evt) {
+  if (!inputName.value || !inputMail.value) {
+    evt.preventDefault();
+    modContact.classList.add('modal-error');
+  } else {
+    if (isStorageSupport) {
+      localStorage.setitem('Name', inputName.value);
+    }
+};
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (modContact.classList.contains("block-show") || modMap.classList.contains('block-show')) {
+      evt.preventDefault();
+      modContainer.classList.remove('flex-show');
+      modContact.classList.remove('block-show');
+      modMap.classList.remove('block-show');
+      modContact.classList.remove('modal-error');
+    }
+  }
 });
 
 // Modal-map
@@ -84,9 +129,9 @@ sliderButtons[0].addEventListener('click', function (evt) {
   sliderButtons[0].classList.add('button-slider-checked');
   sliderButtons[1].classList.remove('button-slider-checked');
   sliderButtons[2].classList.remove('button-slider-checked');
-  headSlides[0].classList.add('flex-show');
-  headSlides[1].classList.remove('flex-show');
-  headSlides[2].classList.remove('flex-show');
+  headSlides[0].classList.add('slide-flex-show');
+  headSlides[1].classList.remove('slide-flex-show');
+  headSlides[2].classList.remove('slide-flex-show');
 });
 
 sliderButtons[1].addEventListener('click', function (evt) {
@@ -94,9 +139,9 @@ sliderButtons[1].addEventListener('click', function (evt) {
   sliderButtons[0].classList.remove('button-slider-checked');
   sliderButtons[1].classList.add('button-slider-checked');
   sliderButtons[2].classList.remove('button-slider-checked');
-  headSlides[0].classList.remove('flex-show');
-  headSlides[1].classList.add('flex-show');
-  headSlides[2].classList.remove('flex-show');
+  headSlides[0].classList.remove('slide-flex-show');
+  headSlides[1].classList.add('slide-flex-show');
+  headSlides[2].classList.remove('slide-flex-show');
 });
 
 sliderButtons[2].addEventListener('click', function (evt) {
@@ -104,9 +149,9 @@ sliderButtons[2].addEventListener('click', function (evt) {
   sliderButtons[0].classList.remove('button-slider-checked');
   sliderButtons[1].classList.remove('button-slider-checked');
   sliderButtons[2].classList.add('button-slider-checked');
-  headSlides[0].classList.remove('flex-show');
-  headSlides[1].classList.remove('flex-show');
-  headSlides[2].classList.add('flex-show');
+  headSlides[0].classList.remove('slide-flex-show');
+  headSlides[1].classList.remove('slide-flex-show');
+  headSlides[2].classList.add('slide-flex-show');
 });
 
 };
