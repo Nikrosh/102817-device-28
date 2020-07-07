@@ -1698,6 +1698,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr 2fr 1fr;
     grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 67px;
 }
 
 .footer-bottom-row {
@@ -1739,7 +1740,6 @@ footer .container::before {
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 0;
-    margin-bottom: 67px;
 }
 
 .footer-down-menu li {
@@ -1751,9 +1751,11 @@ footer .container::before {
 }
 
 .phone-footer {
-    text-align: right;
+    margin-left: auto;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
 }
-
 .footer-up-menu,
 .footer-down-menu {
     list-style: none;
@@ -1921,6 +1923,8 @@ footer .container::before {
     grid-column-start: -2;
     -ms-grid-column-span: 1;
     grid-column-end: -1;
+    width: 27px;
+    margin-left: auto;
     color: var(--white);
     text-decoration: none;
     height: 34px;

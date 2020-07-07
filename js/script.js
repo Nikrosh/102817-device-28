@@ -18,7 +18,6 @@ var inputName = document.querySelector('#modal-name');
 var inputMail = document.querySelector('#modal-mail');
 var modalForm = document.querySelector('.modal-contact-form');
 var storageName = localStorage.getItem('Name');
-
 var isStorageSupport = true;
 var storage = "";
 
