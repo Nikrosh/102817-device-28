@@ -2,21 +2,21 @@
 
 @font-face {
     font-family: "OpenSans";
-    src: url(../fonts/OpenSans-Light.woff2) format("woff2"), url(../fonts/OpenSans-Light.woff) format("woff");
+    src: url(../fonts/openSans-Light.woff2) format("woff2"), url(../fonts/openSans-Light.woff) format("woff");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Gilroy";
-    src: url(../fonts/Gilroy-Light.woff2) format("woff2"), url(../fonts/Gilroy-Light.woff) format("woff");
+    src: url(../fonts/gilroy-Light.woff2) format("woff2"), url(../fonts/gilroy-Light.woff) format("woff");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Gilroy";
-    src: url(../fonts/Gilroy-ExtraBold.woff2) format("woff2"), url(../fonts/Gilroy-ExtraBold.woff) format("woff");
+    src: url(../fonts/gilroy-ExtraBold.woff2) format("woff2"), url(../fonts/gilroy-ExtraBold.woff) format("woff");
     font-weight: 800;
     font-style: normal;
 }
@@ -44,6 +44,11 @@
     --yellow: #f7e296;
     --green: #91c92f;
     --yellow-dark: #f0c52e;
+    --dark-gray: #dcdcdc;
+    --gray-back: #c4c4c4;
+    --back-gray: #ebebeb;
+    --modal-back: #f2f2f2;
+    --red: #F6DADA;
 }
 
 body {
@@ -109,6 +114,7 @@ body {
     z-index: 1;
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     height: 40px;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -240,6 +246,7 @@ body {
 
 .header-search-input:focus + .header-search-button {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .header-search-button:hover {
@@ -973,7 +980,7 @@ body {
     margin-top: 0;
     letter-spacing: 0.2em;
     margin-bottom: 39px;
-    display: inline-block;
+    display: block;
 }
 
 .about p,
@@ -1096,8 +1103,8 @@ body {
 .inner-catalog {
     padding-top: 11px;
     position: relative;
-    background: -o-linear-gradient(left, #e5e5e5 calc(50% - 252px), #ffffff calc(50% - 252px));
-    background: linear-gradient(90deg, #e5e5e5 calc(50% - 252px), #ffffff calc(50% - 252px));
+    background: -o-linear-gradient(left, var(--gray-light) calc(50% - 252px), var(--white) calc(50% - 252px));
+    background: linear-gradient(90deg, var(--gray-light) calc(50% - 252px), var(--white) calc(50% - 252px));
 }
 
 .inner-catalog::before {
@@ -1108,8 +1115,8 @@ body {
     height: 70px;
     top: 0;
     left: 0;
-    background: -o-linear-gradient(left, #dcdcdc calc(50% - 252px), #e5e5e5 calc(50% - 252px));
-    background: linear-gradient(90deg, #dcdcdc calc(50% - 252px), #e5e5e5 calc(50% - 252px));
+    background: -o-linear-gradient(left, var(--dark-gray) calc(50% - 252px), var(--gray-light) calc(50% - 252px));
+    background: linear-gradient(90deg, var(--dark-gray) calc(50% - 252px), var(--gray-light) calc(50% - 252px));
     z-index: 0;
 }
 
@@ -1205,7 +1212,7 @@ body {
     border-color: var(--white);
     border-style: solid;
 
-    background-color: #c4c4c4;
+    background-color: var(--gray-back);
     -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
 }
@@ -1437,6 +1444,7 @@ body {
     width: 18px;
     height: 18px;
     display: inline-block;
+    vertical-align: middle;
     margin-right: 16px;
     opacity: 0.2;
     background-image: url(../img/icon-up-dir.svg);
@@ -1446,6 +1454,7 @@ body {
     width: 18px;
     height: 18px;
     display: inline-block;
+    vertical-align: middle;
     background-image: url(../img/icon-down-dir.svg);
 }
 
@@ -1597,7 +1606,7 @@ body {
 
 .catalog-paginator {
     list-style: none;
-    background-color: #ebebeb;
+    background-color: var(--back-gray);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1753,6 +1762,7 @@ footer .container::before {
 .phone-footer {
     margin-left: auto;
     display: inline-block;
+    vertical-align: middle;
     color: white;
     text-decoration: none;
 }
@@ -2037,13 +2047,13 @@ footer .container::before {
     padding-left: 20px;
     border-radius: 0;
     border-width: 0;
-    background-color: #f2f2f2;
+    background-color: var(--modal-back);
 }
 
 .modal-contact input:invalid {
     border: none;
     color: rgba(0, 0, 0, 0.4);
-    background-color:  #F6DADA;
+    background-color:  var(--red);
 }
 
 .modal-contact textarea {
@@ -2053,7 +2063,7 @@ footer .container::before {
     padding-top: 17px;
     border-radius: 0;
     border-width: 0;
-    background-color: #f2f2f2;
+    background-color: var(--modal-back);
 }
 
 .modal-submit {
@@ -2068,7 +2078,7 @@ footer .container::before {
 
 .modal-contact input:hover,
 .modal-contact textarea:hover {
-    background-color: #eaeaea;
+    background-color: var(back-gray);
 }
 
 .modal-contact input:focus,
@@ -2113,10 +2123,6 @@ footer .container::before {
     display: block;
     animation-name: opacity;
     animation-duration: 0.6s;
-}
-
-.inline-block-show {
-    display: inline-block;
 }
 
 @keyframes shake {
