@@ -1408,9 +1408,11 @@ body {
 }
 
 .sort-price {
+    width: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
 }

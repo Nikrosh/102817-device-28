@@ -19,12 +19,12 @@ var inputMail = document.querySelector('#modal-mail');
 var modalForm = document.querySelector('.modal-contact-form');
 var storageName = localStorage.getItem('Name');
 var isStorageSupport = true;
-var storage = "";
+var storage = '';
 
 if (body.classList.contains('body-index')) {
 
 try {
-storageName = localStorage.getItem("Name");
+storageName = localStorage.getItem('Name');
 } catch (err) {
 isStorageSupport = false;
 }
@@ -63,9 +63,9 @@ modalForm.addEventListener('submit', function (evt) {
 };
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (modContact.classList.contains("block-show") || modMap.classList.contains('block-show')) {
+    if (modContact.classList.contains('block-show') || modMap.classList.contains('block-show')) {
       evt.preventDefault();
       modContainer.classList.remove('flex-show');
       modContact.classList.remove('block-show');
